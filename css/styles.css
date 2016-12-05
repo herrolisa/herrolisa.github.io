@@ -54,3 +54,5 @@ table {
 /* IE6 */
 *:first-child + html .clearfix {
   zoom: 1; }
+
+* {box-sizing: border-box;}
