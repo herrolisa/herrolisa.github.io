@@ -56,3 +56,40 @@ table {
   zoom: 1; }
 
 * {box-sizing: border-box;}
+
+.intro-container{
+  height: 250px;
+  background-image: url(https://static.pexels.com/photos/28827/pexels-photo-28827.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.portfolio-container{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 25px auto;
+  width: 1000px;
+}
+.large-card{
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mini-cards-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+.mini-card{
+  width: 250px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+
+}
