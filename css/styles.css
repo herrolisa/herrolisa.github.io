@@ -63,6 +63,19 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-border{
+  border: 2px solid #FFF;
+  width: 75%;
+}
+.intro-text{
+  margin: 10px;
+  padding: 50px 10px;
+  background-color: #FFF;
+  text-align: center;
 }
 
 .portfolio-container{
@@ -91,5 +104,10 @@ table {
 }
 
 @media (min-width: 1000px) {
-
+  .intro-container{
+    height: 450px;
+  }
+  .intro-border{
+    width: 500px;
+  }
 }
