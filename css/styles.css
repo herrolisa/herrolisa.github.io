@@ -91,7 +91,7 @@ a{
 }
 .intro-text{
   margin: 10px;
-  padding: 50px 10px;
+  padding: 50px 15px;
   background-color: #FFF;
   text-align: center;
 }
@@ -147,9 +147,9 @@ a{
 }
 .large-card:hover img, .mini-card:hover img{
   opacity: 0.5;
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
 }
 .card-text{
   background: rgba(0,0,0,0.8);
