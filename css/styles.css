@@ -124,10 +124,24 @@ h2{
   width: 75%;
   margin: 0 auto;
   padding: 10px;
+  position: relative;
 }
 .large-img, .small-img{
   width: 100%;
 }
+.card-text{
+  margin: 0;
+  padding: 0 30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top:calc(50% - 30px);
+  left: 0;
+/*  visibility: hidden;*/
+}
+/*.large-card:hover .card-text{
+  visibility: visible;
+}*/
 
 .mini-cards-container{
   padding: 0;
@@ -135,6 +149,7 @@ h2{
 .mini-card{
   width: 100%;
   padding: 10px;
+  position: relative;
 }
 
 @media (min-width: 1000px) {
