@@ -75,7 +75,7 @@ h2{
 
 .intro-container{
   padding: 50px 0;
-  background-image: url(https://static.pexels.com/photos/28827/pexels-photo-28827.jpg);
+  background-image: url(../img/floral-bg-4272x2848.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -92,6 +92,28 @@ h2{
   padding: 50px 10px;
   background-color: #FFF;
   text-align: center;
+}
+.link-btn{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+}
+.linkedin{
+  background-image: url(../img/linkedin.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.linkedin:hover{
+  background-position: -30px 0;
+}
+.github{
+  background-image: url(../img/github.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.github:hover{
+  background-position: -30px 0;
 }
 
 .portfolio-container{
