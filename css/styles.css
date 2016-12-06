@@ -88,28 +88,24 @@ h2{
 }
 
 .portfolio-container{
-  display: flex;
-  flex-flow: row wrap;
   margin: 25px auto;
-  width: 1000px;
+  width: 100%;
 }
 .large-card{
-  width: 500px;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
 }
+.large-img, .small-img{
+  width: 100%;
+}
+
 .mini-cards-container{
-  display: flex;
-  flex-flow: row wrap;
+  padding: 0;
 }
 .mini-card{
-  width: 250px;
-  height: 175px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 10px;
 }
 
 @media (min-width: 1000px) {
@@ -118,5 +114,30 @@ h2{
   }
   .intro-border{
     width: 500px;
+  }
+  .portfolio-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 1000px;
+  }
+  .large-card{
+    flex: 0 0 50%;
+    height: 350px;
+  }
+  .large-img{
+    height: 330px;
+    object-fit: cover;
+  }
+  .mini-cards-container{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .mini-card{
+    flex: 0 0 50%;
+    height: 175px;
+  }
+  .small-img{
+    height: 155px;
+    object-fit: cover;
   }
 }
