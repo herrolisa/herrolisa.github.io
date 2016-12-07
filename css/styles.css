@@ -1,0 +1,217 @@
+/*IMPORT GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald:400,700');
+
+/*RESET DEFAULT BROSWER SETTINGS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+body {
+  line-height: 1; }
+ol, ul {
+  list-style: none; }
+blockquote, q {
+  quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+* html .clearfix {
+  zoom: 1; }
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1; }
+
+/**********************/
+/***** CUSTOM CSS *****/
+/**********************/
+
+/*UNIVERSAL STYLING*/
+* {box-sizing: border-box;}
+h1{
+  margin: 0.75rem 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: #263136;
+}
+h2{
+  margin: 0.75rem 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  color: #587058;
+}
+a{
+  text-decoration: none;
+}
+
+/*INTRO CONTAINER*/
+.intro-container{
+  padding: 50px 0;
+  background-image: url(../img/floral-bg-4272x2848.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-border{
+  border: 3px solid #FFF;
+  width: 75%;
+}
+.intro-text{
+  margin: 10px;
+  padding: 50px 15px;
+  background-color: #FFF;
+  text-align: center;
+}
+.link-btn{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+}
+.linkedin{
+  background-image: url(../img/linkedin.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.linkedin:hover{
+  background-position: -30px 0;
+}
+.github{
+  background-image: url(../img/github.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.github:hover{
+  background-position: -30px 0;
+}
+
+/*PORTFOLIO CONTAINER*/
+.portfolio-container{
+  margin: 25px auto;
+  width: 100%;
+}
+.large-card-container{
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.mini-cards-container{
+  padding: 0;
+}
+.mini-card-container{
+  padding: 10px;
+}
+.large-card, .mini-card{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.large-img, .small-img{
+  width: 100%;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+}
+.large-card:hover img, .mini-card:hover img{
+  opacity: 0.5;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.card-text{
+  background: rgba(0,0,0,0.8);
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  padding-top: calc(25% - 10px);
+  visibility: hidden;
+}
+.card-text h2{
+  margin: 0.5rem 0;
+}
+.card-text p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+}
+.large-card:hover .card-text, .mini-card:hover .card-text{
+  visibility: visible;
+}
+
+@media (min-width: 1000px) {
+  .intro-container{
+    height: 450px;
+  }
+  .intro-border{
+    width: 500px;
+  }
+  .portfolio-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 1000px;
+  }
+  .large-card-container{
+    flex: 0 0 50%;
+    height: 350px;
+  }
+  .large-card{
+    height: 330px;
+  }
+  .large-img{
+    height: 330px;
+    object-fit: cover;
+  }
+  .mini-cards-container{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .mini-card-container{
+    flex: 0 0 50%;
+    height: 175px;
+  }
+  .mini-card{
+    height: 155px;
+  }
+  .small-img{
+    height: 155px;
+    object-fit: cover;
+  }
+}
